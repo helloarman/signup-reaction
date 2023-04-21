@@ -98,7 +98,7 @@ var language = {
     },
     'Thanks #name For Using Me!': {
         'en': 'Thanks #name For Using Me!',
-        'bn': 'ধন্যবাদ #name আমাকে ব্যবহার করার জন্য!'
+        'bn': 'ধন্যবাদ #name , আমাকে ব্যবহার করার জন্য!'
     },
 };
 
