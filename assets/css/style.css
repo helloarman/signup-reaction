@@ -1,0 +1,74 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 600 !important;
+}
+
+.form-control:focus{
+    border-color: #6677FB !important;
+    box-shadow: 0 0 0 0.25rem rgb(102 119 251 / 40%) !important;
+}
+
+.face img{
+    width: 200px;
+}
+
+.btn-theme{
+    background: linear-gradient(90deg, #5FADFB 0%, #5F74FA 52.08%, #9B8DFD 100%);
+    border-radius: 5px;
+    color: #fff !important;
+    padding: 15px 150px !important;
+}
+
+.form-check-input:checked{
+    background-color: #6677FB !important;
+    border-color: #6677FB !important;
+}
+
+.form-theme{
+    width: 400px;
+    margin: auto;
+}
+
+.eye-icon{
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    font-size: 20px;
+    color: #6677FB;
+}
+
+#successful img{
+    margin: auto;
+    display: flex;
+    width: 250px;
+}
+
+/* Scrollbar Start */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #5FADFB 0%, #5F74FA 52.08%, #9B8DFD 100%); 
+    border-radius: 0px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, #5FADFB 0%, #5F74FA 52.08%, #9B8DFD 100%); 
+  }
+/* Scrollbar End */

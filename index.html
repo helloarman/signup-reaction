@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <!--    |---------------------------|
+        | SignUp Reaction by ARMAN RAHMAN  |
+        |---------------------------|   -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SWIFTMAN</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+        <!-- ALL CSS -->
+        <!-- Jquery -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css"
+            />
+
+        <!-- Fontawesome CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
+            />
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+            rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="sign-up text-center mt-3">Sign Up</h1>
+            <div class="face d-flex justify-content-center align-items-center">
+                <img id="face" src="./assets/image/face/robot-happy.png" alt="">
+            </div>
+            <div class="text text-center">
+            </div>
+            <div id="successful" class="d-none">
+                <img src="./assets/image/successful.gif" alt="successful">
+                <div id="textResponse"></div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 col-sm-12">
+                    <div id="formPage" class="form-theme d-block ">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name"
+                                placeholder="Name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email"
+                                placeholder="Email">
+                            <label for="email">Email address</label>
+                        </div>
+                        <div class="gender mb-3">
+                            <label for="floatingPassword">Gender</label>
+                            <div class="d-flex">
+                                <div class="form-check ms-3">
+                                    <input class="form-check-input" type="radio"
+                                        name="flexRadioDefault"
+                                        id="male">
+                                    <label class="form-check-label" for="male"
+                                        value="male">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="form-check ms-3">
+                                    <input class="form-check-input" type="radio"
+                                        name="flexRadioDefault"
+                                        id="female" value="female">
+                                    <label class="form-check-label"
+                                        for="female">
+                                        Female
+                                    </label>
+                                </div>
+                                <div class="form-check ms-3">
+                                    <input class="form-check-input" type="radio"
+                                        name="flexRadioDefault"
+                                        id="others">
+                                    <label class="form-check-label" for="others"
+                                        value="others">
+                                        Others
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3 d-flex">
+                            <input type="password" class="form-control"
+                                id="password"
+                                placeholder="Password">
+                            <label for="password">Password</label>
+                            <div id="showIcon">
+                                <i class="eye-icon fas fa-eye"></i>
+                            </div>
+                            <div id="hideIcon" class="d-none">
+                                <i class="eye-icon fas fa-eye-slash"></i>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control"
+                                id="confirmPassword"
+                                placeholder="Password">
+                            <label for="confirmPassword">Confirm Password</label>
+                        </div>
+                        <div class="text-center mt-3">
+                            <button id="signUp" type="button" class="btn
+                                btn-theme">Sign
+                                Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ALL JS -->
+
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+        <!-- Fontawesome JS -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+        <!-- App JS -->
+        <script src="js/app.js"></script>
+
+
+    </body>
+</html>
