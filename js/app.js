@@ -8,6 +8,7 @@ const email = document.getElementById('email');
 const male = document.getElementById('male');
 const female = document.getElementById('female');
 const others = document.getElementById('others');
+const genderInput = document.getElementsByName('genderInput');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirmPassword');
 const showIcon = document.getElementById('showIcon');
@@ -23,6 +24,7 @@ var passShow = false;
 var validEmail = false;
 var passwordMatched = false;
 var userName = '';
+var userGender = '';
 
 nameInput?.addEventListener('keyup', function(){
     userName = this.value;
@@ -43,7 +45,6 @@ setInterval(function () {
 
 email?.addEventListener('keyup', function () {
     const emailCheck = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    // const emailx = 
     if (email.value.match(emailCheck)) {
         faceActive(type, 'happy');
         validEmail = true;
@@ -54,7 +55,6 @@ email?.addEventListener('keyup', function () {
 });
 
 // Password Start 
-
 showIcon?.addEventListener('click', function () {
     password.setAttribute('type', 'text');
     // If password field is clicked
@@ -124,23 +124,26 @@ face.onmouseout = function () {
 // Gender Start 
 male?.addEventListener('click', function () {
     type = 'boy';
+    userGender = this.value;
     faceActive(type, 'happy');
 });
 
 female?.addEventListener('click', function () {
     type = 'girl';
+    userGender = this.value;
     faceActive(type, 'happy');
 });
 
 others?.addEventListener('click', function () {
     type = 'robot';
+    userGender = this.value;
     faceActive(type, 'happy');
 });
 // Gender End 
 
 signUp.addEventListener('click', function () {
     // console.log(nameInput.value);
-    if(nameInput.value && validEmail && (male.value || female.value || others.value) && passwordMatched){
+    if(nameInput.value && validEmail && userGender && passwordMatched){
         formPage.classList.remove('d-block');
         formPage.classList.add('d-none');
         successful.classList.remove('d-none');
@@ -148,6 +151,7 @@ signUp.addEventListener('click', function () {
         faceActive(type, 'wow');
         textResponse.innerHTML =  `<h1 class="text-center">Thanks ${userName} For Using This</h1>`;
     }else{
+        navigator.vibrate(500);
         faceActive(type, 'angry');
     }
     
