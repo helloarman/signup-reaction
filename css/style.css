@@ -24,6 +24,11 @@
         font-weight: 600 !important;
     }
 
+    #textResponse{
+        font-family: 'Hind Siliguri', sans-serif;
+        size: 16px;
+    }
+
     .sign-up{
         font-weight: 800;
         font-size: 40px;
